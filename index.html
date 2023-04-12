@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encriptador de Texto</title>
+  </head>
+
+  <body>
+    <main class="container">
+      
+      <section class="container-content">
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="">
+        </div>
+        <div class="container-text">
+          <textarea
+            class="text-desencriptar"
+            name="inputEncriptar"
+            id="inputEncriptar"
+          ></textarea>
+          <p class="alert-disabled">
+            &#8252; Solo letras minúsculas, sin carácteres especiales y sin acentos
+          </p>
+        </div>
+        <div class="container-buttons">
+          <a id="encriptar" class="btn-encriptar">Encriptar</a>
+          <a id="desencriptar" class="btn-desencriptar">Desencriptar</a>
+        </div>
+      </section>
+
+      <section class="container-resultado">
+        <article class="container-text-default">
+          <div class="container-img">
+            <img src="./assets/result.svg" alt="">
+          </div>
+          <div class="container-text-encriptado">
+            <p>Ningún mensaje fué encontrado</p>
+            <p class="text-message-normal">
+              Ingrese el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </article>
+
+        <article class="container-context-resultado">
+          <p class="text-message-resultado"></p>
+          <a id="copiar" class="btn-copiar">Copiar</a>
+        </article>
+      </section>
+
+      <footer class="container-footer">
+        <p>By <a href="https://www.linkedin.com/in/alexelguetar/" target="_blank">Alex Elgueta Rivas</a></p>
+      </footer>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
